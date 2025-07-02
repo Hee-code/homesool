@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div id="header">
+    <div class="h_cont">
+      <h1 class="logo"><img src="images/logo.png" alt="logo"></h1>
+      <ul class="nav">
+        <li><a href="#">홈술제안</a></li>
+        <li><a href="#">홈술카테고리</a></li>
+        <li><a href="#">홈술특가</a></li>
+        <li><a href="#">홈술가이드</a></li>
+        <li><a href="#">매거진</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div id="section">
+    <div class="main"> <!-- 메인 배너 -->
+      <div class="main_img swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="images/main1.png" alt="banner1"></div>
+          <div class="swiper-slide"><img src="images/main2.png" alt="banner2"></div>
+          <div class="swiper-slide"><img src="images/main3.png" alt="banner3"></div>
+          <div class="swiper-slide"><img src="images/main4.png" alt="banner4"></div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+
+    <div class="cont1"> <!--소개-->
+      <div class="c1_imgbox">
+        <ul>
+          <li><img src="images/c1_1.png" alt="drink1"></li>
+          <li><img src="images/c1_2.png" alt="drink2"></li>
+          <li><img src="images/c1_3.png" alt="drink3"></li>
+          <li><img src="images/c1_4.png" alt="drink4"></li>
+        </ul>
+      </div>
+      <div class="c1_desc">
+        <h3>느리게 술이 익어가는 마을,<br><span>느린마을</span></h3>
+        <p>
+          가볍게 즐기고 본연의 맛을 느끼고 농밀함을 경험하다.<br>
+          정성을 들여 재료를 손질하고, 시간을 들여 발효와 숙성을 거쳐<br>
+          완성되는 가양주는 느림의 미학을 담았다.<br>
+          천편일률적인 기계의 맛이 아닌 조금 느리더라도<br>
+          진정 살아있는 맛있는 술을 빚는다.
+        </p>
+      </div>
+    </div>
+
+    <div class="drink_desc"> <!-- 즐기는 방법 -->
+      <h2>느린마을을 즐기는 방법</h2>
+      <ul class="icon">
+        <li>
+          <img src="images/icon1.png" alt="icon1">
+          <p>깔끔한 맛<br>음미하기</p>
+        </li>
+        <li>
+          <img src="images/icon2.png" alt="icon2">
+          <p>사랑하는<br>연인과 함께</p>
+        </li>
+        <li>
+          <img src="images/icon3.png" alt="icon3">
+          <p>즐거운<br>모임 자리에서</p>
+        </li>
+        <li>
+          <img src="images/icon4.png" alt="icon4">
+          <p>다양한<br>안주와 함께</p>
+        </li>
+        <li>
+          <img src="images/icon5.png" alt="icon5">
+          <p>느림의 미학<br>즐기기</p>
+        </li>
+      </ul>
+    </div>
+
+    <div class="other"> <!-- 다른 제품들 -->
+      <div class="o_txt">
+        <h1>다른 제품들</h1>
+        <p>더보기 &gt;</p>
+      </div>
+      <div class="o_img">
+        <ul class="img1">
+          <li>
+            <img src="images/grid1.png" alt="grid1">
+            <p>느린마을막걸리</p>
+          </li>
+          <li>
+            <img src="images/grid2.png" alt="grid2">
+            <p>배아락40</p>
+          </li>
+          <li>
+            <img src="images/grid3.png" alt="grid3">
+            <p>그래, 그날 9.5</p>
+          </li>
+        </ul>
+        <ul class="img2">
+          <li>
+            <img src="images/grid4.png" alt="grid4">
+            <p>백련 미스티</p>
+          </li>
+          <li>
+            <img src="images/grid5.png" alt="grid5">
+            <p>세시주</p>
+          </li>
+          <li>
+            <img src="images/grid6.png" alt="grid6">
+            <p>호감</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div id="footer">
+    <div class="foot_cont">
+      <h1><img src="images/logo.png" alt="logo"></h1>
+      <p class="foot_info">
+        대표: 배영호<br>
+        전화: 080-550-5500<br>
+        사업자등록번호: 882-85-01179<br>
+        주소: 경기도 포천시 화현면 화동로432번길 25 배상면주가 3층<br>
+        이메일: homesool@soolsool.co.kr
+      </p>
+      <p class="copyright">ⓒ2025 Homesool. All rights reserved.</p>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    const swiper = new Swiper('.swiper-container', {
+    loop: true,
+    autoplay: {
+      delay: 4000,
+      disableOnInteraction: false,
+    },
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+    effect: 'slide',
+    speed: 800,
+  });
+  </script>
+</body>
+</html>

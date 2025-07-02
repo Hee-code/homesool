@@ -1,0 +1,552 @@
+@charset "UTF-8";
+
+*{margin:0; padding:0;}
+li{list-style:none;}
+a{text-decoration:none; color:black;}
+img{border:0; vertical-align:top;}
+
+/* 노토산스 (기본) */
+@import url('//fonts.googleapis.com/earlyaccess/notosanskr.css');
+
+body{font-family: 'Noto Sans KR', sans-serif;}
+
+#header{
+  width:100%; height: 150px;
+}
+#header .h_cont{
+  width: 92%; height: 150px;
+  margin:0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#header .h_cont .logo>img{
+  width: 200px;
+}
+#header .h_cont .nav{
+  display: flex;
+}
+#header .h_cont .nav>li{
+  margin-left:40px;
+}
+#header .h_cont .nav>li>a{
+  font-size: 19px;
+  font-weight: 300;
+  transition:all 0.3s;
+}
+
+#header .h_cont .nav>li:hover>a{
+  font-weight: 400;
+  color:#ef7f1b;
+}
+
+
+#section{width:100%;}
+
+/* 메인 배너 */
+#section .main{
+  width: 100%;
+  overflow:hidden;
+  position: relative;
+}
+#section .main .main_img{
+  width: 100%; height:auto;
+  display: flex;
+}
+#section .main .main_img .swiper-wrapper .swiper-slide{
+  width: 100%;
+}
+#section .main .main_img .swiper-wrapper .swiper-slide>img{
+  width: 100%; height: 100%;
+}
+#section .main .main_img .swiper-pagination{
+  position: absolute;
+  bottom:20px; left:0;
+}
+.swiper-container .swiper-pagination .swiper-pagination-bullet{
+  width: 12px; height: 12px;
+  background: #ffffff !important;
+  opacity: 0.5;
+}
+.swiper-container .swiper-pagination .swiper-pagination-bullet-active{
+  width:12px;
+  background: #ef7f1b !important;
+  opacity: 1;
+}
+
+
+
+/* 소개 */
+#section .cont1{
+  margin-top:150px;
+}
+#section .cont1 .c1_imgbox{
+  width:95%;
+  margin:0 auto;
+}
+#section .cont1 .c1_imgbox>ul{
+  display: flex;
+  justify-content: space-between;
+}
+#section .cont1 .c1_imgbox>ul>li:nth-child(2),
+#section .cont1 .c1_imgbox>ul>li:nth-child(4){
+  margin-top:50px;
+}
+
+#section .cont1 .c1_desc{
+  width: 67%; height: 180px;
+  margin:0 auto;
+  display: flex;
+  justify-content: space-between;
+  margin-top:50px;
+  align-items: center;
+}
+#section .cont1 .c1_desc>h3{
+  text-align: right;
+  font-size: 40px;
+  font-weight: 500;
+}
+#section .cont1 .c1_desc>h3>span{
+  color:#d1af66;
+}
+#section .cont1 .c1_desc>p{
+  font-size: 22px;
+  font-weight: 300;
+  line-height: 35px;
+}
+
+
+
+/* 즐기는 방법 */
+#section .drink_desc{
+  width:100%; height:420px;
+  margin-top:150px;
+  background-color:#fff9ec;
+  box-sizing: border-box;
+}
+#section .drink_desc>h2{
+  text-align: center;
+  padding-top:50px;
+  font-weight: 400;
+  font-size: 30px;
+}
+#section .drink_desc .icon{
+  width: 85%;
+  margin:0 auto;
+  display: flex;
+  justify-content: space-between;
+  margin-top:60px;
+}
+#section .drink_desc .icon>li{
+  text-align: center;
+}
+#section .drink_desc .icon>li>img{
+  transition:all 0.3s;
+}
+#section .drink_desc .icon>li>p{
+  font-size: 20px;
+  font-weight: 300;
+  margin-top:-40px;
+  opacity: 0;
+  transition: all 0.3s;
+}
+
+#section .drink_desc .icon>li:hover>img{
+  transform: translateY(-50px);
+}
+#section .drink_desc .icon>li:hover>p{
+  opacity: 1;
+}
+
+
+
+/* 다른 제품들 */
+#section .other{
+  margin-top:150px;
+}
+#section .other .o_txt{
+  width: 88%; height: 50px;
+  margin:0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#section .other .o_txt>h1{
+  font-weight: 400;
+}
+#section .other .o_txt>p{
+  color:gray;
+  font-weight: 300;
+  cursor: pointer;
+  transition:all 0.3s;
+}
+#section .other .o_txt>p:hover{
+  color: #ef7f1b;
+}
+
+#section .other .o_img{
+  margin-top:30px;
+}
+#section .other .o_img>ul{
+  width: 94.5%;
+  margin:0 auto;
+  justify-content: space-between;
+  display: flex;
+}
+
+#section .other .o_img>ul>li{
+  position: relative;
+}
+
+#section .other .o_img .img2>li{
+  margin-top:41px;
+}
+
+#section .other .o_img>ul>li:after{
+  width: 100%; height: 500px;
+  content:"";
+  display: block;
+  background-color: rgba(0, 0, 0, 0.3);
+  position: absolute;
+  top:0; left:0;
+  border-radius: 20px;
+  opacity: 0;
+  transition:all 0.3s;
+  z-index: 2;
+}
+#section .other .o_img>ul>li>p{
+  position:absolute;
+  bottom:20px; left:30px;
+  font-size: 24px;
+  color: white;
+  letter-spacing: 2px;
+  opacity: 0;
+  transition:all 0.3s;
+  z-index: 5;
+}
+#section .other .o_img>ul>li>p:after{
+  width: 16px; height: 16px;
+  content:"";
+  display: block;
+  border-top:2px solid white;
+  border-right:2px solid white;
+  transform: rotate(45deg);
+  position: absolute;
+  top:11px; right:-30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: arrow 2s infinite;
+}
+@keyframes arrow {
+  0%{transform:rotate(45deg) translateX(0);}
+  50%{transform:translateY(-70%) rotate(45deg) translate(20px);}
+  100%{transform:rotate(45deg) translateX(0);}
+}
+
+#section .other .o_img>ul>li:hover:after{
+  opacity: 1;
+}
+#section .other .o_img>ul>li:hover>p{
+  opacity: 1;
+}
+
+
+
+/* 푸터 */
+#footer{
+  width: 100%; height: 300px;
+  background-color: #ffe6b1;
+  margin-top:150px;
+}
+#footer .foot_cont{
+  margin-left:100px;
+  padding-top:20px;
+}
+#footer .foot_cont>h1>img{
+  width: 150px;
+}
+#footer .foot_cont>p{
+  font-weight: 300;
+}
+#footer .foot_cont .foot_info{
+  margin-top:20px;
+  line-height: 26px;
+}
+#footer .foot_cont .copyright{
+  margin-top:10px;
+  color:#ef7f1b
+}
+
+
+
+@media all and (min-width:1200px) and (max-width:1500px){
+  /* 소개 */
+  #section .cont1 .c1_imgbox>ul>li>img{
+    width: 95%;
+  }
+  #section .cont1 .c1_desc{
+    width: 80%;
+  }
+
+  /* 다른 제품들 */
+  #section .other .o_img>ul>li:after{
+    width: 90%; height: 100%;
+    border-radius: 16px;
+  }
+  #section .other .o_img>ul>li>img{
+    width:90%;
+  }
+}
+
+@media all and (min-width:768px) and (max-width:1199px){
+  /* 소개 */
+  #section .cont1 .c1_imgbox>ul>li>img{
+    width: 95%;
+  }
+  #section .cont1 .c1_desc{
+    width: 80%;
+  }
+  #section .cont1 .c1_desc>h3{
+    font-size:30px;
+  }
+  #section .cont1 .c1_desc>p{
+    font-size: 19px;
+  }
+
+  /* 즐기는 방법 */
+  #section .drink_desc .icon>li>img{
+    width: 90%;
+  }
+
+  /* 다른 제품들 */
+  #section .other .o_img>ul>li:after{
+    width: 90%; height: 100%;
+    border-radius: 12px;
+  }
+  #section .other .o_img>ul>li>img{
+    width:90%;
+  }
+}
+
+@media all and (min-width:576px) and (max-width:767px){
+  #header .h_cont .nav{
+    position: relative;
+    width: 30px; height: 3px;
+    background-color: rgb(128, 128, 128);
+    transition: all 0.3s;
+    display: block;
+  }
+  #header .h_cont .nav:before{
+    content: "";
+    display: block;
+    width: 30px; height: 3px;
+    background-color: rgb(128, 128, 128);
+    position: absolute;
+    top:-10px; left:0;
+    transition: all 0.3s;
+  }
+  #header .h_cont .nav:after{
+    content: "";
+    display: block;
+    width: 30px; height: 3px;
+    background-color: rgb(128, 128, 128);
+    position: absolute;
+    top:10px; left:0;
+    transition: all 0.3s;
+  }
+  #header .h_cont .nav:hover,
+  #header .h_cont .nav:hover:before,
+  #header .h_cont .nav:hover:after{
+    background-color: #ef7f1b;
+  }
+  #header .h_cont .nav>li{
+    display: none;
+  }
+
+  /* 소개 */
+  #section .cont1{
+    margin-top:100px;
+  }
+  #section .cont1 .c1_imgbox>ul>li>img{
+    width: 95%;
+  }
+  #section .cont1 .c1_desc{
+    display: block;
+  }
+  #section .cont1 .c1_desc>h3{
+    text-align: left;
+    font-size:25px;
+  }
+  #section .cont1 .c1_desc>p{
+    font-size: 18px;
+    line-height: 28px;
+    margin-top:20px;
+  }
+
+  /* 즐기는 방법 */
+  #section .drink_desc{
+    height: 360px;
+    margin-top:100px;
+  }
+  #section .drink_desc .icon>li>img{
+    width: 90%;
+  }
+
+  /* 다른 제품들 */
+  #section .other{
+    margin-top:100px;
+  }
+  #section .other .o_txt>h1{
+    font-size: 25px;
+  }
+  #section .other .o_img .img2>li{
+  margin-top:30px;
+}
+  #section .other .o_img>ul>li:after{
+    width: 90%; height: 100%;
+    border-radius: 12px;
+  }
+  #section .other .o_img>ul>li>img{
+    width:90%;
+  }
+  #section .other .o_img>ul>li>p{
+    font-size: 14px;
+    bottom:10px; left:20px;
+  }
+  #section .other .o_img>ul>li>p:after{
+    display: none;
+  }
+
+  /* 푸터 */
+  #footer{
+    margin-top:100px;
+  }
+  #footer .foot_cont{
+    margin-left:60px;
+  }
+}
+
+@media all and (max-width:575px){
+  #header{
+    height:120px;
+  }
+  #header .h_cont{
+    height:120px;
+  }
+  #header .h_cont .logo>img{
+    width: 140px;
+  }
+  #header .h_cont .nav{
+    position: relative;
+    width: 30px; height: 3px;
+    background-color: rgb(128, 128, 128);
+    transition: all 0.3s;
+    display: block;
+  }
+  #header .h_cont .nav:before{
+    content: "";
+    display: block;
+    width: 30px; height: 3px;
+    background-color: rgb(128, 128, 128);
+    position: absolute;
+    top:-10px; left:0;
+    transition: all 0.3s;
+  }
+  #header .h_cont .nav:after{
+    content: "";
+    display: block;
+    width: 30px; height: 3px;
+    background-color: rgb(128, 128, 128);
+    position: absolute;
+    top:10px; left:0;
+    transition: all 0.3s;
+  }
+  #header .h_cont .nav:hover,
+  #header .h_cont .nav:hover:before,
+  #header .h_cont .nav:hover:after{
+    background-color: #ef7f1b;
+  }
+  #header .h_cont .nav>li{
+    display: none;
+  }
+
+  /* 메인 배너 */
+  .swiper-container .swiper-pagination .swiper-pagination-bullet{
+    width: 10px; height: 10px;
+  }
+  .swiper-container .swiper-pagination .swiper-pagination-bullet-active{
+    width: 10px; height: 10px;
+  }
+
+  /* 소개 */
+  #section .cont1{
+    margin-top:80px;
+  }
+  #section .cont1 .c1_imgbox>ul>li>img{
+    width: 95%;
+  }
+  #section .cont1 .c1_desc{
+    width:73%; height:250px;
+    display: block;
+  }
+  #section .cont1 .c1_desc>h3{
+    text-align: left;
+    font-size:25px;
+  }
+  #section .cont1 .c1_desc>p{
+    font-size: 16px;
+    line-height: 28px;
+    margin-top:20px;
+  }
+
+  /* 즐기는 방법 */
+  #section .drink_desc{
+    height: 300px;
+    margin-top:80px;
+  }
+  #section .drink_desc .icon>li>img{
+    width: 98%;
+  }
+  #section .drink_desc .icon>li>p{
+    font-size: 14px;
+  }
+
+  /* 다른 제품들 */
+  #section .other{
+    margin-top:80px;
+  }
+  #section .other .o_txt>h1{
+    font-size: 25px;
+  }
+  #section .other .o_img>ul{
+    display: block;
+    text-align: center;
+  }
+  #section .other .o_img .img1>li,
+  #section .other .o_img .img2>li{
+  margin-top:30px;
+}
+  #section .other .o_img>ul>li:after{
+    width: 90%; height: 100%;
+    border-radius: 20px;
+    left:22px;
+  }
+  #section .other .o_img>ul>li>img{
+    width:90%;
+  }
+  #section .other .o_img>ul>li>p:after{
+    display: none;
+  }
+  #section .other .o_img>ul>li>p{
+    left:50px;
+  }
+
+  /* 푸터 */
+  #footer{
+    margin-top:80px;
+  }
+  #footer .foot_cont{
+    margin-left:50px;
+  }
+}
