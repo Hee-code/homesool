@@ -652,7 +652,6 @@ body{font-family: 'Noto Sans KR', sans-serif;}
   }
   #section .other .o_img>ul{
     display: block;
-    /* text-align: center; */
   }
   #section .other .o_img .img1>li,
   #section .other .o_img .img2>li{
@@ -662,7 +661,7 @@ body{font-family: 'Noto Sans KR', sans-serif;}
   #section .other .o_img>ul>li:after{
     width: 90%; height: 100%;
     border-radius: 16px;
-    left:5px;
+    left:15px;
   }
   #section .other .o_img .img1>li:nth-child(1):after,
   #section .other .o_img .img2>li:nth-child(2):after{
@@ -676,7 +675,7 @@ body{font-family: 'Noto Sans KR', sans-serif;}
   }
   #section .other .o_img>ul>li>p{
     font-size: 19px;
-    /* bottom:15px; left:35px; */
+    bottom:15px; left:35px;
   }
 
   /* 푸터 */
